@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+E:\BE-Promineo-Tech\Week-02-Conditions_and_Loops\Week 2 Lab\.metadata\.plugins\org.eclipse.jdt.core

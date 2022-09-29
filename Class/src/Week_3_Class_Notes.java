@@ -32,11 +32,11 @@ public class Week_3_Class_Notes {
 //			System.out.print(letters[j] + " ");
 //		}
 		
-		int x [] = new int [100];
-		for(int j = 0; j < x.length; j++) {
-			x[j] = (int)(Math.random() * 100 + 1);
-			System.out.print(x[j] + " ");
-		}
+//		int x [] = new int [100];
+//		for(int j = 0; j < x.length; j++) {
+//			x[j] = (int)(Math.random() * 100 + 1);
+//			System.out.print(x[j] + " ");
+//		}
 //		
 //		Arrays.sort(x);
 //		System.out.println();
@@ -44,6 +44,32 @@ public class Week_3_Class_Notes {
 //		for(int a : x)
 //			System.out.print(a + " ");
 		
-		
+	}
+	
+	static int[] buildArray(int num) {
+		// Write your code below
+		int[] newArray = new int[num];
+		for (int i = 0; i < num; i++) {
+		    newArray[i] = i;
+		}
+		return newArray;
+	}
+	
+	static int sumOfDigits(int digits) {
+		// Write your code below
+		int sum = 0;
+		int digit;
+		while (digits > 0) {
+			digit = digits % 10;
+			sum += digit;
+			digits /= 10;
+		}
+		return sum;
+	}
+	static void changeTwo(int a, int b, int[] arr) {
+        // Add your code below this line
+		arr[0] = a;
+		arr[arr.length - 1] = b;
+        // Add your code above this line 
 	}
 }
