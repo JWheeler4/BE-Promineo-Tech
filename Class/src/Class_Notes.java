@@ -4,13 +4,14 @@ import java.util.*;
 public class Class_Notes {
 
 	public static void main(String[] args) {
-		Scanner kb = new Scanner(System.in);
+//		Scanner kb = new Scanner(System.in);
 //		
 ////		sorting ints
 //		System.out.println("How old are you?");
 //		int age = Integer.parseInt(kb.nextLine());
 //		System.out.println("Oh " + age + " is not that old");
 //		
+		System.out.println(createStringCount(5));
 //		
 ////		storing double
 //		System.out.println("What is your gpa?");
@@ -27,11 +28,12 @@ public class Class_Notes {
 //		String name = kb.nextLine();
 //		System.out.println("hi " + name);
 		
-		System.out.println("Guess my number. 1-10. You have 5 tries");
-		int num = (int)(Math.random() * 10 + 1);
+//		System.out.println("Guess my number. 1-10. You have 5 tries");
+//		int num = (int)(Math.random() * 10 + 1);
 //		System.out.println(num);
 //		
-		
+//		int[] abc = {1, 2, 3};
+//		System.out.println(abc[last]);
 //		
 		
 //		
@@ -54,6 +56,14 @@ public class Class_Notes {
 //			}
 //		}
 		
+	}
+	
+	public static String createStringCount(int number) {
+		StringBuilder word = new StringBuilder();
+		for (int index = 0; index < number; index++) {
+			word.append(index);
+		}
+		return word.toString();
 	}
 	
 }
