@@ -64,7 +64,7 @@ public class App {
 				System.out.println(player2.getName() + " wins and " + player2.getName() + "'s score increments from " + player2.getScore() + " to " + (player2.getScore() + 1) + ".");
 				player2.incrementScore();
 			} else {
-				System.out.println("This battle was a tie and no points are awareded.");
+				System.out.println("This battle was a tie and no points are awarded.");
 			}
 		}
 		System.out.println("Results:");
