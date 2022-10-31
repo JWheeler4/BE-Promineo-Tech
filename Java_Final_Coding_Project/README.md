@@ -7,7 +7,7 @@ WAR is a digital version of the card game, also referred to as WAR, which runs o
 
 * Players enter their name and a single game of WAR is simulated.
 
-Notible traits of this variant of the card game:
+Some notible traits of this variant of the card game:
 * After each "battle," rather than winning the cards, the player who wins recieves a point.
 * When a "battle" results in a tie, rather than a "war" occuring, no points are awarded.
 * When the end of each players' decks are reached the game ends.
