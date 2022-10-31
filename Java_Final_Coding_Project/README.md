@@ -7,6 +7,7 @@ WAR is a digital version of the card game, also referred to as WAR, which runs i
 
 * Players begin in the Main Menu where they can either start a game or exit the application.
 * If a game is started, players enter their names and a single game of WAR is simulated.
+* After a game of WAR is simulated, the application returns to the Main Menu.
 
 Some notible traits of this variant of the game:
 * After each "battle," rather than winning the cards, the player who wins recieves a point.
