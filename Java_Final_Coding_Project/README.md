@@ -11,4 +11,4 @@ Notible traits of this variant of the card game:
 * After each "battle," rather than winning the cards, the player who wins recieves a point.
 * When a "battle" results in a tie, rather than a "war" occuring, no points are awarded.
 * When the end of each players' decks are reached the game ends.
-* In the case where both players have the same number of points at the end of the game, the game can result in a tie. 
+* In the case where both players have the same number of points at the end of the game, the game will result in a tie. 
