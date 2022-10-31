@@ -9,6 +9,6 @@ WAR is a digital version of the card game, also referred to as WAR, which runs o
 
 Some notible traits of this variant of the game:
 * After each "battle," rather than winning the cards, the player who wins recieves a point.
-* When a "battle" results in a tie a "war" (as shown in the image above) does not occur, instead, no points are awarded.
+* When a "battle" results in a tie, a "war" (as shown in the image above) does not occur, instead, no points are awarded to either player.
 * When the end of each players' decks are reached the game ends.
 * In the case where both players have the same number of points at the end of the game, the game will result in a tie. 
