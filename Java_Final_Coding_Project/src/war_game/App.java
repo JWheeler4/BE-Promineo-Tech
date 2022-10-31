@@ -32,7 +32,7 @@ public class App {
 	public static void printOptions() {
 		System.out.println("Please choose from the following options:");
 		System.out.println("1) Begin New Game");
-		System.out.println("2) Exit Menu");
+		System.out.println("2) Exit Application");
 	}
 	
 	public static void runGame() {
@@ -58,18 +58,35 @@ public class App {
 			System.out.println(player1.getName() + " has flipped over the " + flip1.describe() + ".");
 			System.out.println(player2.getName() + " has flipped over the " + flip2.describe() + ".");
 			if (flip1.getValue() > flip2.getValue()) {
-				System.out.println(player1.getName() + " wins and " + player1.getName() + "'s score increments from " + player1.getScore() + " to " + (player1.getScore() + 1) + ".");
+				if (player1.getName().charAt(player1.getName().length() - 1) == 's') {
+					System.out.println(player1.getName() + " wins and " + player1.getName() + "' score increments from " + player1.getScore() + " to " + (player1.getScore() + 1) + ".");
+				} else {
+					System.out.println(player1.getName() + " wins and " + player1.getName() + "'s score increments from " + player1.getScore() + " to " + (player1.getScore() + 1) + ".");
+				}
 				player1.incrementScore();
 			} else if (flip2.getValue() > flip1.getValue()) {
-				System.out.println(player2.getName() + " wins and " + player2.getName() + "'s score increments from " + player2.getScore() + " to " + (player2.getScore() + 1) + ".");
+				if (player2.getName().charAt(player2.getName().length() - 1) == 's') {
+					System.out.println(player2.getName() + " wins and " + player2.getName() + "' score increments from " + player2.getScore() + " to " + (player2.getScore() + 1) + ".");
+				} else {
+					System.out.println(player2.getName() + " wins and " + player2.getName() + "'s score increments from " + player2.getScore() + " to " + (player2.getScore() + 1) + ".");
+				}
 				player2.incrementScore();
 			} else {
 				System.out.println("This battle was a tie and no points are awarded.");
 			}
 		}
 		System.out.println("Results:");
-		System.out.println(player1.getName() + "'s total score is " + player1.getScore() + ".");
-		System.out.println(player2.getName() + "'s total score is " + player2.getScore() + ".");
+		
+		if (player1.getName().charAt(player1.getName().length() - 1) == 's') {
+			System.out.println(player1.getName() + "' total score is " + player1.getScore() + ".");
+		} else {
+			System.out.println(player1.getName() + "'s total score is " + player1.getScore() + ".");
+		}
+		if (player2.getName().charAt(player2.getName().length() - 1) == 's') {
+			System.out.println(player2.getName() + "' total score is " + player2.getScore() + ".");
+		} else {
+			System.out.println(player2.getName() + "'s total score is " + player2.getScore() + ".");
+		}
 		if (player1.getScore() > player2.getScore()) {
 			System.out.println(player1.getName() + " has won!");
 		} else if (player1.getScore() < player2.getScore()) {
