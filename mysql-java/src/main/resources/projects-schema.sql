@@ -1,8 +1,10 @@
-DROP TABLE IF EXISTS project;
-DROP TABLE IF EXISTS material;
+USE projects;
+
 DROP TABLE IF EXISTS project_category;
-DROP TABLE IF EXISTS step;
 DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS step;
+DROP TABLE IF EXISTS material;
+DROP TABLE IF EXISTS project;
 
 CREATE TABLE project (
   project_id INT AUTO_INCREMENT NOT NULL,
