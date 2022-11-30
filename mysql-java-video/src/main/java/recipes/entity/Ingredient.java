@@ -3,7 +3,7 @@
  */
 package recipes.entity;
 
-import java.math.BigDecimal;
+import java.math.*;
 import java.util.Objects;
 
 import provided.entity.EntityBase;

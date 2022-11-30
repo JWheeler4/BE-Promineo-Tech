@@ -5,6 +5,7 @@ package provided.util;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -126,6 +127,10 @@ public abstract class DaoBase {
     if (LocalTime.class.equals(classType)) {
       return Types.OTHER;
     }
+    
+    if(BigDecimal.class.equals(classType)) {
+        return Types.DECIMAL;
+      }
 
     throw new DaoException("Unsupported class type: " + classType.getName());
   }
