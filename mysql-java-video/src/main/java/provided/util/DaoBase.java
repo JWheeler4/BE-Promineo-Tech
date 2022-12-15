@@ -98,6 +98,10 @@ public abstract class DaoBase {
         case Types.VARCHAR:
           stmt.setString(parameterIndex, (String) value);
           break;
+          
+        case Types.DECIMAL:
+          stmt.setBigDecimal(parameterIndex, (BigDecimal) value);
+          break;
 
         default:
           throw new DaoException("Unknown parameter type: " + classType);
@@ -129,8 +133,8 @@ public abstract class DaoBase {
     }
     
     if(BigDecimal.class.equals(classType)) {
-        return Types.DECIMAL;
-      }
+      return Types.DECIMAL;
+    }
 
     throw new DaoException("Unsupported class type: " + classType.getName());
   }
